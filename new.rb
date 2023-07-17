@@ -1,25 +1,8 @@
 class Car
-  
-  def move(direction, distance)
-    self.turn(direction)
-    self.run(distance)
+
+  def self.turn(direction)
+    puts "#{direction}に曲がります"
   end
-   
-   def turn(direction)
-    puts "#{direction}に曲がります。"
-   end
-  def run(distance)
-    puts "車で#{distance}キロ走ります。"
-  end
+
+Car.turn("右")
 end
-
-car = Car.new
-car.move("右" , )
-
-class Car
-  def self.run(distance)
-    puts "車で#{distance}キロ走ります。"
-  end
-end
-
-Car.run(10)
